@@ -83,7 +83,7 @@ error[E0382]: use of moved value: `a_struct`
 layout: false
 class: center, middle
 
-## .center[所有権の借用されたまま返却されない<br />⇩<br />borrow checker に怒られる]
+## .center[所有権が借用されたまま返却されない<br />⇩<br />borrow checker に怒られる]
 ---
 ## 所有権の共有
 
