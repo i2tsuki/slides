@@ -131,7 +131,7 @@ b_struct: RefCell { value: AStruct { value: 8 } }
 ## std::rc::Rc
 - 所有権の共有に使う
 
-- 参照カウント型ポインタ(スマートポインタ)
+- 参照カウントポインタ(スマートポインタ)
 
 - 生ポインタへのアクセスをラップする
 
@@ -141,6 +141,7 @@ layout: false
 class: center, middle
 
 ## ここからが本題 
+(参照カウントってなに？)
 ---
 layout: false
 ## 参照カウント
