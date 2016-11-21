@@ -128,7 +128,7 @@ a_struct: RefCell { value: AStruct { value: 8 } }
 b_struct: RefCell { value: AStruct { value: 8 } }
 ```
 ---
-## std::Rc::rc
+## std::rc::Rc
 - 所有権の共有に使う
 
 - 参照カウント型ポインタ(スマートポインタ)
