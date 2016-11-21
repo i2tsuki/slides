@@ -22,7 +22,7 @@ layout: false
 .center[インフラおじさん達に囲まれてパケットに溺れて働いている]
 
 .center[libpnet, ring とかのリポジトリを眺めてる]
-.center[しごとではまだ Rust 書いてない..]
+.center[開発環境は gentoo に rust-nightly 入ってるのでそれで!]
 
 ---
 class: center, middle
