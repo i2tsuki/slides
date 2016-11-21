@@ -11,7 +11,7 @@ class: center, middle
 
 ---
 layout: false
-## あいさつ
+## 一応自己紹介
 .center[<img src="./images/twicon_b.png" width="240">]
 
 .center[@kizkoh]
