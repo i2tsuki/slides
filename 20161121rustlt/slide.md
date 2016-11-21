@@ -136,8 +136,13 @@ b_struct: RefCell { value: AStruct { value: 8 } }
 - 生ポインタへのアクセスをラップする
 
 - pure rust
-
 ---
+layout: false
+class: center, middle
+
+## ここからが本題 
+---
+layout: false
 ## 参照カウント
 ```rust
 ...
