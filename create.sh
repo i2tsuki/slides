@@ -1,9 +1,35 @@
 #!/bin/sh
 
-set -eux
+set -eu
+
+usage()
+{
+    echo "usage:"
+    echo "  $0 [slide dir name]"
+    echo ""
+    echo "options:"
+    echo "  --help, -h                                   Show help"
+    exit 0
+}
+
+flag_parse()
+{
+    for i in $*
+    do
+	case $i in
+	    --help|-h)
+		usage
+	esac
+	shift
+    done
+}
+
+[ $# = "0" ] && usage
+flag_parse $*
 
 NAME="$1"
 
+set -x
 mkdir -pv ${NAME}
 cp -prv ./css ${NAME}/css
 mkdir -pv ${NAME}/images
@@ -20,7 +46,6 @@ cat <<EOF > ${NAME}/slide.html
       @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
       @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
       @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
       body { font-family: 'Droid Serif'; }
       h1, h2, h3 {
         font-family: 'Yanone Kaffeesatz';
@@ -51,7 +76,6 @@ class: center, middle
 ---
 ## たいとるたいとる
 .center[[@kizkoh](https://twitter.com/kizkoh)]
-
 .center[2016-00-00]
 .center[[にほんどっか](https://connpass.com/)]
 EOF
